@@ -4,6 +4,7 @@
     <button @click='state = "attack"'>Attack</button>
     <button @click='state = "die"'>Die</button>
     <button @click='state = "hurt"'>Hurt</button>
+    <button @click='state = "jump"'>Jump</button>
 
     <knight :state=state></knight>
   </div>

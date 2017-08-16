@@ -40,7 +40,7 @@ export default {
 .die {
   animation: die .65s steps(7) infinite;
   background: url('../assets/knight-die.png') -10px -10px;
-  height: 1369px;
+  height: 1369px5D;
   width: 1841px;
 }
 
@@ -53,13 +53,26 @@ export default {
 .hurt {
   animation: hurt .65s steps(7) infinite;
   background: url('../assets/knight-hurt.png') -10px -10px;
-  height: 1057px;
-  width: 1478px;
+  height: 1116px;
+  width: 1567px;
 }
 
 @keyframes hurt {
   100% {
     background-position: -11109px;
+  }
+}
+
+.jump {
+  animation: jump .65s steps(7) infinite;
+  background: url('../assets/knight-jump.png') -10px -10px;
+  height: 1375px;
+  width: 1586px;
+}
+
+@keyframes jump {
+  100% {
+    background-position: -11242px;
   }
 }
 </style>
