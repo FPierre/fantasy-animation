@@ -49,4 +49,17 @@ export default {
     background-position: -13027px;
   }
 }
+
+.hurt {
+  animation: hurt .65s steps(7) infinite;
+  background: url('../assets/knight-hurt.png') -10px -10px;
+  height: 1057px;
+  width: 1478px;
+}
+
+@keyframes hurt {
+  100% {
+    background-position: -11109px;
+  }
+}
 </style>
