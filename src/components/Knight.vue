@@ -40,7 +40,7 @@ export default {
 .die {
   animation: die .65s steps(7) infinite;
   background: url('../assets/knight-die.png') -10px -10px;
-  height: 1369px5D;
+  height: 1369px;
   width: 1841px;
 }
 
