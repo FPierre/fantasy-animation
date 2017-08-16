@@ -1,28 +1,21 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
+  <div id='app'>
+    <button @click='state = "walk"'>Walk</button>
+    <button @click='state = "attack"'>Attack</button>
+    <button @click='state = "die"'>Die</button>
+
+    <knight :state=state></knight>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+import Knight from '@/components/Knight'
 
 export default {
   name: 'app',
-  components: {
-    Hello
-  }
+  data () {
+    return { state: 'walk' }
+  },
+  components: { Knight }
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
