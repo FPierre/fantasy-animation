@@ -1,5 +1,6 @@
 <template>
   <div id='app'>
+    <button @click='state = "idle"'>Idle</button>
     <button @click='state = "walk"'>Walk</button>
     <button @click='state = "attack"'>Attack</button>
     <button @click='state = "die"'>Die</button>
@@ -16,7 +17,7 @@ import Knight from '@/components/Knight'
 export default {
   name: 'app',
   data () {
-    return { state: 'walk' }
+    return { state: 'idle' }
   },
   components: { Knight }
 }

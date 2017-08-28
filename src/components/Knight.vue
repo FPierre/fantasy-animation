@@ -11,6 +11,19 @@ export default {
 </script>
 
 <style scoped>
+.idle {
+  animation: idle .65s steps(7) infinite;
+  background: url('../assets/knight-idle.png') -0 -0;
+  height: 1028px;
+  width: 1464px;
+}
+
+@keyframes idle {
+  100% {
+    background-position: -10248px;
+  }
+}
+
 .walk {
   animation: walk .65s steps(7) infinite;
   background: url('../assets/knight-walk.png') -10px -10px;
